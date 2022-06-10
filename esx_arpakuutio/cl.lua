@@ -26,7 +26,7 @@ function panos()
 			local bet = tonumber(data2.value)
 
 			if bet == nil or bet > 99999 then
-				ESX.ShowNotification('Virheellinen summa!')
+				exports['mythic_notify']:DoHudText('error', 'Virheellinen summa!')
 			else
                 TriggerServerEvent('esx_arpakuutio:checkki', bet)
                 menu.close()
@@ -48,7 +48,7 @@ RegisterNetEvent('esx_arpakuutio:noppiensumma', function(bet)
 			local number = tonumber(data2.value)
 
 			if number == nil or number < 2 or number > 12 then
-				ESX.ShowNotification('Virheellinen summa!')
+				exports['mythic_notify']:DoHudText('error', 'Virheellinen summa!')
 			else
                 TriggerServerEvent('esx_arpakuutio:pelikayntii', number, bet)
                 menu.close()
