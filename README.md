@@ -4,7 +4,7 @@ Tälläne jännä arpakuutio stydeemi
 
 Määrität panoksen ja veikkauksen arpakuutioiden summasta mikäli veikkaus osuu oikein voitat panoksen 10 kertaisena
 
-#Requirements
+# Requirements
 
 https://github.com/JayMontana36/mythic_notify
 
