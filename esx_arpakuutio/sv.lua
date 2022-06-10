@@ -4,9 +4,9 @@ TriggerEvent('esx:getSharedObject', function(obj)
 end)
 
 ESX.RegisterServerCallback('esx_arpakuutio:onkoluuria', function(source, cb)
-    local xPlayer = ESX.GetPlayerFromId(source)
+    local pelaaja = ESX.GetPlayerFromId(source)
   
-    if xPlayer.getInventoryItem('phone').count >= 1 then
+    if pelaaja.getInventoryItem('phone').count >= 1 then
         cb(true)
     else
         TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Sinulla ei ole puhelinta!'})
