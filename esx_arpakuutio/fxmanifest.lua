@@ -2,7 +2,7 @@ fx_version 'adamant'
 game 'gta5'
 
 author 'Lazzisdeveloping'
-description 'riisu luotiliivit'
+description 'Arpakuutio'
 version '1.0'
 
 client_scripts {
